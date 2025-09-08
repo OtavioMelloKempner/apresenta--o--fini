@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Apresentação Fini Minhoca Azedinha</title>
+  <style>
+    /* Fundo */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, #1b003a, #0a0019);
+      color: #fff;
+      overflow: hidden;
+    }
+
+    /* Container geral dos slides */
+    .slideshow {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .slide {
+      position: absolute;
+      width: 80%;
+      max-width: 900px;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.8s ease;
+    }
+
+    .slide.active {
+      opacity: 1;
+      position: relative;
+    }
+
+    h1, h2 {
+      color: #ff7eb6;
+    }
+
+    .pill {
+      display: inline-block;
+      background: white;
+      color: black;
+      font-weight: bold;
+      padding: 12px 24px;
+      margin: 10px;
+      border-radius: 40px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    /* Controles */
+    .controls {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .arrow {
+      cursor: pointer;
+      font-size: 28px;
+      margin: 0 20px;
+      color: #fff;
+    }
+
+    /* Estrelas */
+    .star {
+      position: absolute;
+      background: white;
+      border-radius: 50%;
+      opacity: 0.8;
+      animation: moveStar linear infinite;
+    }
+
+    @keyframes moveStar {
+      from { transform: translateY(0); }
+      to { transform: translateY(100vh); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fundo com estrelas -->
+  <div id="stars"></div>
+
+  <div class="slideshow">
+
+    <!-- SLIDE 1 -->
+    <div class="slide active">
+      <h1>Fini Minhoca Azedinha</h1>
+      <h2>Ingredientes e Aditivos</h2>
+    </div>
+
+    <!-- SLIDE 2 -->
+    <div class="slide">
+      <h2>Ingredientes básicos (não são aditivos)</h2>
+      <div class="pill">Açúcar</div>
+      <div class="pill">Xarope de glicose</div>
+      <div class="pill">Água</div>
+      <div class="pill">Gelatina</div>
+      <div class="pill">Óleo vegetal de palma</div>
+    </div>
+
+    <!-- SLIDE 3 (introdução aditivos) -->
+    <div class="slide">
+      <h2>Aditivos alimentares</h2>
+      <p>Vamos ver funções, IDA e pontos de saúde de cada um.</p>
+    </div>
+
+    <!-- SLIDE 4 em diante: um aditivo por slide -->
+    <div class="slide">
+      <h2>Ácido cítrico (INS 330)</h2>
+      <p><b>Função:</b> acidulante<br>
+         <b>IDA:</b> não limitada<br>
+         <b>Saúde:</b> seguro; em excesso com açúcar → erosão dental/cáries.</p>
+    </div>
+
+    <div class="slide">
+      <h2>Ácido láctico (INS 270)</h2>
+      <p><b>Função:</b> acidulante<br>
+         <b>IDA:</b> não limitada<br>
+         <b>Saúde:</b> seguro em quantidades normais.</p>
+    </div>
+
+    <div class="slide">
+      <h2>Ácido málico (INS 296)</h2>
+      <p><b>Função:</b> regulador de acidez<br>
+         <b>IDA:</b> não especificada<br>
+         <b>Saúde:</b> pode contribuir para desgaste dental.</p>
+    </div>
+
+    <div class="slide">
+      <h2>Aromatizantes</h2>
+      <p><b>Função:</b> sabor/aroma<br>
+         <b>IDA:</b> quantum satis<br>
+         <b>Saúde:</b> seguros nos níveis aprovados, pouca transparência.</p>
+    </div>
+
+    <div class="slide">
+      <h2>Dióxido de titânio (INS 171)</h2>
+      <p><b>Função:</b> corante<br>
+         <b>Situação:</b> banido na UE, permitido no Brasil<br>
+         <b>Saúde:</b> possível risco de genotoxicidade.</p>
+    </div>
+
+    <div class="slide">
+      <h2>Tartrazina (INS 102)</h2>
+      <p><b>Função:</b> corante amarelo<br>
+         <b>IDA:</b> 7,5 mg/kg p.c./dia<br>
+         <b>Saúde:</b> pode causar alergias e exige alerta na UE.</p>
+    </div>
+
+    <div class="slide">
+      <h2>Vermelho 40 (INS 129)</h2>
+      <p><b>Função:</b> corante vermelho<br>
+         <b>IDA:</b> 7 mg/kg p.c./dia<br>
+         <b>Saúde:</b> alergias/hiperatividade; estudos recentes investigam efeitos intestinais.</p>
+    </div>
+
+    <div class="slide">
+      <h2>Amarelo Crepúsculo FCF (INS 110)</h2>
+      <p><b>Função:</b> corante laranja<br>
+         <b>IDA:</b> 4 mg/kg p.c./dia<br>
+         <b>Saúde:</b> pode impactar atenção/atividade em crianças.</p>
+    </div>
+
+    <div class="slide">
+      <h2>Azul Brilhante FCF (INS 133)</h2>
+      <p><b>Função:</b> corante azul<br>
+         <b>IDA:</b> 6 mg/kg p.c./dia<br>
+         <b>Saúde:</b> seguro dentro da IDA; monitorado para hiperatividade.</p>
+    </div>
+
+    <div class="slide">
+      <h2>Lactato de sódio (INS 325)</h2>
+      <p><b>Função:</b> antioxidante/regulador<br>
+         <b>IDA:</b> não especificada<br>
+         <b>Saúde:</b> geralmente seguro, estabiliza o produto.</p>
+    </div>
+
+    <!-- Slide final -->
+    <div class="slide">
+      <h2>Destaques de Risco</h2>
+      <p><b>Críticos:</b> dióxido de titânio e corantes artificiais.<br>
+         <b>Menos preocupantes:</b> ácidos e lactato de sódio.<br>
+         <b>Saúde pública:</b> excesso de açúcar + ácido → principal problema.</p>
+    </div>
+
+    <!-- Controles -->
+    <div class="controls">
+      <span class="arrow" id="prev">&#10094;</span>
+      <span class="arrow" id="next">&#10095;</span>
+    </div>
+  </div>
+
+  <script>
+    // Slides
+    const slides = document.querySelectorAll('.slide');
+    let current = 0;
+
+    function showSlide(index) {
+      slides.forEach((s, i) => {
+        s.classList.remove('active');
+        if (i === index) s.classList.add('active');
+      });
+    }
+
+    document.getElementById('next').onclick = () => {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    };
+
+    document.getElementById('prev').onclick = () => {
+      current = (current - 1 + slides.length) % slides.length;
+      showSlide(current);
+    };
+
+    // Estrelas animadas
+    const starsContainer = document.getElementById('stars');
+    for (let i = 0; i < 60; i++) {
+      let star = document.createElement('div');
+      star.classList.add('star');
+      let size = Math.random() * 3 + 1;
+      star.style.width = size + 'px';
+      star.style.height = size + 'px';
+      star.style.left = Math.random() * window.innerWidth + 'px';
+      star.style.top = Math.random() * window.innerHeight + 'px';
+      star.style.animationDuration = (Math.random() * 20 + 10) + 's';
+      starsContainer.appendChild(star);
+    }
+  </script>
+</body>
+</html>
